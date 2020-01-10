@@ -4,12 +4,12 @@ import os
 # Imports the Google Cloud client library
 from google.cloud import vision
 from google.cloud.vision import types
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/Users/padmarao/Downloads/silicon-will-259515-a12b29f6b5eb.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="Your_API_Key"
 # Instantiates a client
 client = vision.ImageAnnotatorClient()
 
 # The name of the image file to annotate
-file_name = os.path.abspath('/Users/padmarao/Downloads/4a85b831-7983-442a-99fe-dad02f5c72a1.JPG')
+file_name = os.path.abspath('FileLocation')
 
 # Loads the image into memory
 with io.open(file_name, 'rb') as image_file:
